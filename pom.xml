@@ -21,18 +21,15 @@
 
 	<dependencyManagement>
 		<dependencies>
-
 			<dependency>
 				<groupId>by.epam.training.java.vasilevsky.exchanger</groupId>
 				<artifactId>datamodel</artifactId>
 				<version>1.0.0</version>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 
 	<build>
-
 		<pluginManagement>
 			<plugins>
 				<plugin>
