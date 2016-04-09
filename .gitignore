@@ -1,0 +1,11 @@
+.project
+services/target/
+dataccess/.classpath
+datamodel/.classpath
+services/.classpath
+services/.settings/
+datamodel/target/
+datamodel/.settings/
+dataccess/target/
+dataccess/.settings/
+.settings/
