@@ -4,8 +4,15 @@ public class Balance extends AbstractModel {
 
 	private Integer debit;
 	private Integer credit;
-	private Currency currency;
-	private RegistryOperations registryoperations;
+	private RegistryOperations numberRegistry;
+
+	public RegistryOperations getNumberRegistry() {
+		return numberRegistry;
+	}
+
+	public void setNumberRegistry(RegistryOperations numberRegistry) {
+		this.numberRegistry = numberRegistry;
+	}
 
 	public Integer getDebit() {
 		return debit;
@@ -21,22 +28,6 @@ public class Balance extends AbstractModel {
 
 	public void setCredit(Integer credit) {
 		this.credit = credit;
-	}
-
-	public Currency getCurrency() {
-		return currency;
-	}
-
-	public void setCurrency(Currency currency) {
-		this.currency = currency;
-	}
-
-	public RegistryOperations getRegistryoperations() {
-		return registryoperations;
-	}
-
-	public void setRegistryoperations(RegistryOperations registryoperations) {
-		this.registryoperations = registryoperations;
 	}
 
 }

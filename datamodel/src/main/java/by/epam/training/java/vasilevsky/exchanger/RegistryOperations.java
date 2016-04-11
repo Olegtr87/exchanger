@@ -5,14 +5,14 @@ import java.util.Date;
 public class RegistryOperations extends AbstractModel {
 
 	private UserCredentials userCredentials;
-	private Integer totalOperations;
+	private Integer numberOperation;
 	private Operation operation;
-	private Course course;
+	private Course courseIn;
+	private Course courseOut;
 	private Integer summIn;
 	private Integer summOut;
-	private Currency currencyIn;
-	private Currency currencyOut;
 	private Date dateOperation;
+	private Integer numberRegistry;
 
 	public UserCredentials getUserCredentials() {
 		return userCredentials;
@@ -22,12 +22,12 @@ public class RegistryOperations extends AbstractModel {
 		this.userCredentials = userCredentials;
 	}
 
-	public Integer getTotalOperations() {
-		return totalOperations;
+	public Integer getNumberOperation() {
+		return numberOperation;
 	}
 
-	public void setTotalOperations(Integer totalOperations) {
-		this.totalOperations = totalOperations;
+	public void setNumberOperation(Integer numberOperation) {
+		this.numberOperation = numberOperation;
 	}
 
 	public Operation getOperation() {
@@ -38,12 +38,20 @@ public class RegistryOperations extends AbstractModel {
 		this.operation = operation;
 	}
 
-	public Course getCourse() {
-		return course;
+	public Course getCourseIn() {
+		return courseIn;
 	}
 
-	public void setCourse(Course course) {
-		this.course = course;
+	public void setCourseIn(Course courseIn) {
+		this.courseIn = courseIn;
+	}
+
+	public Course getCourseOut() {
+		return courseOut;
+	}
+
+	public void setCourseOut(Course courseOut) {
+		this.courseOut = courseOut;
 	}
 
 	public Integer getSummIn() {
@@ -62,22 +70,6 @@ public class RegistryOperations extends AbstractModel {
 		this.summOut = summOut;
 	}
 
-	public Currency getCurrencyIn() {
-		return currencyIn;
-	}
-
-	public void setCurrencyIn(Currency currencyIn) {
-		this.currencyIn = currencyIn;
-	}
-
-	public Currency getCurrencyOut() {
-		return currencyOut;
-	}
-
-	public void setCurrencyOut(Currency currencyOut) {
-		this.currencyOut = currencyOut;
-	}
-
 	public Date getDateOperation() {
 		return dateOperation;
 	}
@@ -86,4 +78,11 @@ public class RegistryOperations extends AbstractModel {
 		this.dateOperation = dateOperation;
 	}
 
+	public Integer getNumberRegistry() {
+		return numberRegistry;
+	}
+
+	public void setNumberRegistry(Integer numberRegistry) {
+		this.numberRegistry = numberRegistry;
+	}
 }

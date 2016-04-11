@@ -4,9 +4,7 @@ import java.util.Date;
 
 public class Check extends AbstractModel{
 	
-	private Date dateCheck;
-	private Integer sum;
-	private UserCredentials userCredentials;
+	private Date dateCheck;	
 	private RegistryOperations registyOperations;
 
 	public Date getDateCheck() {
@@ -17,22 +15,6 @@ public class Check extends AbstractModel{
 		this.dateCheck = dateCheck;
 	}
 
-	public Integer getSum() {
-		return sum;
-	}
-
-	public void setSum(Integer sum) {
-		this.sum = sum;
-	}
-
-	public UserCredentials getUserCredentials() {
-		return userCredentials;
-	}
-
-	public void setUserCredentials(UserCredentials userCredentials) {
-		this.userCredentials = userCredentials;
-	}
-
 	public RegistryOperations getRegistyOperations() {
 		return registyOperations;
 	}
@@ -40,6 +22,4 @@ public class Check extends AbstractModel{
 	public void setRegistyOperations(RegistryOperations registyOperations) {
 		this.registyOperations = registyOperations;
 	}
-
-
 }
