@@ -4,7 +4,7 @@ public class UserCredentials extends AbstractModel {
 
 	private String login;
 	private String password;
-	private Integer role;
+	private String role;
 	private UserProfile userProfile;
 
 	public String getLogin() {
@@ -23,11 +23,11 @@ public class UserCredentials extends AbstractModel {
 		this.password = password;
 	}
 
-	public Integer getRole() {
+	public String getRole() {
 		return role;
 	}
 
-	public void setRole(Integer role) {
+	public void setRole(String role) {
 		this.role = role;
 	}
 

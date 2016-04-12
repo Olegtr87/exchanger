@@ -2,32 +2,23 @@ package by.epam.training.java.vasilevsky.exchanger;
 
 public class Balance extends AbstractModel {
 
-	private Integer debit;
-	private Integer credit;
-	private RegistryOperations numberRegistry;
+	private Integer sum;
+	private Currency currency;
 
-	public RegistryOperations getNumberRegistry() {
-		return numberRegistry;
+	public Currency getCurrency() {
+		return currency;
 	}
 
-	public void setNumberRegistry(RegistryOperations numberRegistry) {
-		this.numberRegistry = numberRegistry;
+	public void setCurrency(Currency currency) {
+		this.currency = currency;
 	}
 
-	public Integer getDebit() {
-		return debit;
+	public Integer getSum() {
+		return sum;
 	}
 
-	public void setDebit(Integer debit) {
-		this.debit = debit;
-	}
-
-	public Integer getCredit() {
-		return credit;
-	}
-
-	public void setCredit(Integer credit) {
-		this.credit = credit;
+	public void setSum(Integer sum) {
+		this.sum = sum;
 	}
 
 }
