@@ -2,6 +2,9 @@ package by.epam.training.java.vasilevsky.exchanger;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Transaction extends AbstractModel {
 
 	private UserCredentials userId;

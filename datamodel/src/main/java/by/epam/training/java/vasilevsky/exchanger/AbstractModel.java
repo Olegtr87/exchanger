@@ -1,7 +1,15 @@
 package by.epam.training.java.vasilevsky.exchanger;
 
-public abstract class AbstractModel {
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
+@MappedSuperclass
+public abstract class AbstractModel {
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	public Long getId() {

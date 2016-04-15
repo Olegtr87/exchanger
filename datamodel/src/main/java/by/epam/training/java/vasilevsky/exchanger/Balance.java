@@ -1,5 +1,8 @@
 package by.epam.training.java.vasilevsky.exchanger;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Balance extends AbstractModel {
 
 	private Integer sum;

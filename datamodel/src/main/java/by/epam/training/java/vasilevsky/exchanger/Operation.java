@@ -1,5 +1,8 @@
 package by.epam.training.java.vasilevsky.exchanger;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Operation extends AbstractModel {
 
 	private String name;

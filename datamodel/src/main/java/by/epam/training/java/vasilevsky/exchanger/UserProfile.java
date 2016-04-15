@@ -2,6 +2,9 @@ package by.epam.training.java.vasilevsky.exchanger;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+
+@Entity
 public class UserProfile extends AbstractModel {
 
 	private String lastName;
@@ -11,6 +14,15 @@ public class UserProfile extends AbstractModel {
 	private Date dateIssue;
 	private String issued;
 	private UserCredentials userCredentials;
+	private Date created;
+
+	public Date getCreated() {
+		return created;
+	}
+
+	public void setCreated(Date created) {
+		this.created = created;
+	}
 
 	public String getLastName() {
 		return lastName;
